@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <header class="header">
+     <div class="container">
+      <div class="row">
+        <div class="header__container col-12">
+          <div class="header__burger burger">
+            <div id="burger-button" class="burger__button">
+                <span class="burger__button-item"></span>
+            </div>
+          </div>
+          <a class="header__logo" href=""><img class="header__logo-item" src="./img/logo.png" alt=""></a>
+          <div class="header__button">
+            <button class="btn btn--mobile">Get started</button>
+          </div>
+          <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__link"><a class="nav__link-item" href="#">Cómo funciona</a></li>
+                <li class="nav__link"><a class="nav__link-item" href="#">¿Por Qué Nosotros?</a></li>
+                <li class="nav__link"><a class="nav__link-item" href="#">Comentarios</a></li>
+                <li class="nav__link"><a class="nav__link-item" href="#">FAQ</a></li>
+                <li class="nav__link"><a class="nav__link-item" href="#">Contáctenos</a></li>
+                <li class="nav__link"><button class="btn btn--pc" href="#">Empezar</button></li>
+                <li class="nav__link"><a class="nav__link-item" href="#">Iniciar Sesión</a></li>
+              </ul>
+          </nav>
+        </div>
+      </div>
+     </div>
+    </header>
+    <main>
+      <section class="welcome">
+        <div class="container">
+          <div class="welcome__row row">
+            <div class=" row">
+              <h1 class="welcome__title col-8">
+                Comience Su Divorcio Online Sin Honorarios de Abogados
+              </h1>
+            </div>
+            <div class="row">
+              <ul class="welcome__list">
+                <li class="welcome__list-item col-sm-6">
+                  <p class="welcome__list-text">Comience su divorcio en línea
+                    Sin honorarios de abogado</p>
+                </li>
+                <li class="welcome__list-item col-sm-6">
+                  <p class="welcome__list-text">Nuestro sistema fue pionero en la industria del divorcio en línea
+                  </p>
+                </li>
+                <li class="welcome__list-item col-sm-6">
+                  <p class="welcome__list-text">Durante 19 años, más de 500,000 
+                    personas han usado nuestras herramientas
+                  </p>
+                </li>
+                <li class="welcome__list-item col-sm-6">
+                  <p class="welcome__list-text">Ofrecemos el mejor precio del mercado.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="survey">
+                <div class="warranty row align-items-center">
+                  <div class="warranty__block col-9">
+                    <div class="row">
+                      <div class="warranty__percent col-4">
+                        100%
+                      </div>
+                      <div class="warranty__text col-8"><span class="warranty__text-upper">de garantia de aprobacion en el tribunal</span> o le devolvemos su dinero</div>
+                    </div>
+                  </div>
+                  <div class="warranty__price col-2">
+                    <p class="warranty__price-num">$139</p>
+                    <p class="warranty__price-text">best price</p>
+                  </div>
+                </div>
+                <p class="survey__title">
+                  Vea si califica
+                </p>
+                <div class="row">
+                  <div class="survey__block col-12 col-md-6">
+                    <div class="survey__radio">
+                      <p class="survey__radio-title">¿Sabe la ubicación de su cónyuge?</p>
+                      <div class="survey__radio-block">
+                        <label class="survey__radio-label">
+                          <input type="radio" class="survey__input" name="radio1" checked>
+                          <span class="survey__radio-item">Sí</span>
+                        </label>
+                        <label class="survey__radio-label">
+                          <input type="radio" class="survey__input" name="radio1">
+                          <span class="survey__radio-item">No</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="survey__radio">
+                      <p class="survey__radio-title">Can you and your spouse agree to the division of property, debts and all  child related issues?</p>
+                      <div class="survey__radio-block">
+                        <label class="survey__radio-label">
+                          <input type="radio" class="survey__input" name="radio2" checked>
+                          <span class="survey__radio-item">Sí</span>
+                        </label>
+                        <label class="survey__radio-label">
+                          <input type="radio" class="survey__input" name="radio2">
+                          <span class="survey__radio-item">No</span>
+                        </label>
+                      </div>
+                    </div>
+                   </div>
+                    <form class="survey__form form col-12 col-md-6" action="">
+                     <div class="form__wrapper">
+                      <div class="form__block">
+                        <input class="form__input" type="text" placeholder="Nambre">
+                      <input class="form__input" type="text" placeholder="Apellido">
+                      </div>
+                      <div class="form__block form__block--col">
+                        <input class="form__input form__input--email" type="text" placeholder="Ingrese su email">
+                      <select class="form__select" name="form__select">
+                        <option class="form__select-option" >Seleccione su estado</option>
+                        <option class="form__select-option" value="1">1</option>
+                        <option class="form__select-option" value="2">2</option>
+                        <option class="form__select-option" value="3">3</option>
+                      </select>
+                      </div>
+                     </div>
+                      <div class="form__btn">
+                        <button class="btn btn--form">Verificar elegibilidad</button>
+                        <small>Al hacer clic en “Verificar Elegibilidad”, usted acepta los Términos y Condiciones</small>
+                      </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="steps">
+                <h2 class="steps-title">Solo cuatro pasos</h2>
+                <div class="row">
+                  <div class="steps__item  col-12 col-sm-6 col-lg-3">
+                      <div class="steps__item-block">
+                        <img class="steps__item-img" src="./img/steps-icon-1.svg" alt="">
+                        <p class="steps__item-desc">Compruebe Si Califica</p>
+                      </div>
+                      <svg class="steps-svg steps-svg--grey">
+                        <use xlink:href ="#arrows"></use>
+                      </svg>
+                  </div>
+                  <div class="steps__item  col-12 col-sm-6 col-lg-3">
+                    <div class="steps__item-block steps__item-block--grey">
+                      <img class="steps__item-img" src="./img/steps-icon-2.svg" alt="">
+                      <p class="steps__item-desc steps__item-desc--grey">Responda Preguntas
+                      Detalladas</p>
+                    </div>
+                    <svg class="steps-svg steps-svg--yellow">
+                      <use xlink:href ="#arrows"></use>
+                    </svg>
+                  </div>
+                  <div class="steps__item  col-12 col-sm-6 col-lg-3">
+                    <div class="steps__item-block steps__item-block--yellow">
+                      <img class="steps__item-img" src="./img/steps-icon-3.svg" alt="">
+                      <p class="steps__item-desc steps__item-desc--yellow">Revise Formularios 
+                        Completados</p>
+                    </div>
+                  <svg class="steps-svg steps-svg--orange">
+                    <use xlink:href ="#arrows"></use>
+                  </svg>
+                  </div>
+                  <div class="steps__item  col-12 col-sm-6 col-lg-3">
+                    <div class="steps__item-block steps__item-block--orange">
+                      <img class="steps__item-img" src="./img/steps-icon-4.svg" alt="">
+                      <p class="steps__item-desc steps__item-desc--orange">Llene los 
+                        Documentos</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="container">
+          <div class="wrapper row">
+            <h2 class="wrapper-title col-12">
+              Obtenga un divorcio en línea fácil
+            </h2>
+            <div class="wrapper__img col-6">
+              <img class="wrapper__img-item" src="./img/info-img.jpg" alt="">
+            </div>
+            <div class="wrapper__block col-12 col-sm-6">
+              <h3 class="wrapper__subtitle">Barato y conveniente</h3>
+              <p class="wrapper__text">Nuestro proceso simple y económico 
+                le permitirá completar sus documentos de divorcio desde la 
+                comodidad de su hogar, sin incurrir en el costo de un 
+                abogado o lidiar con una larga finalización</p>
+            </div>
+            <div class="wrapper__block col-12 col-sm-9 col-md-6">
+              <h3 class="wrapper__subtitle">Profesional y con experiencia</h3>
+              <p class="wrapper__text">Somos uno de los principales 
+                proveedores de divorcios en línea en los Estados 
+                Unidos y Canadá. Hacemos que el divorcio sea fácil 
+                porque nuestro proceso garantiza que sus documentos 
+                esten hechos correctamente. No hay necesidad de 
+                buscar formularios o leer instrucciones largas y confusas</p>
+            </div>
+            <div class="wrapper__block col-12 col-sm-9 col-md-6">
+              <h3 class="wrapper__subtitle">100% aprobado por el tribunal</h3>
+              <p class="wrapper__text">Sin espera. Nuestro servicio de 
+                preparación de divorcios con todo incluido está 
+                garantizado para proporcionarle formularios aceptados 
+                por el tribunal actualizados y completos</p>
+            </div>
+          </div>
+          <div class="news row">
+            <h2 class="news-title col-12">
+              Divorcio en línea en las noticias
+            </h2>
+            <div class="row">
+              <div class="news__block col-12 col-md-6">
+                <img class="news__block-img" src="./img/news-img-1.svg" alt="">
+                <img class="news__block-img" src="./img/news-img-2.svg" alt="">
+                <img class="news__block-img" src="./img/news-img-3.svg" alt="">
+                <img class="news__block-img" src="./img/news-img-4.svg" alt="">
+                <img class="news__block-img" src="./img/news-img-5.svg" alt="">
+                <img class="news__block-img" src="./img/news-img-6.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="difference row">
+            <h2 class="difference-title col-12">
+              ¿Porque nosotros? Revise la diferencia de OnlineDivorce.com
+            </h2>
+            <div class="row">
+              <div class="difference__container col-12 col-md-6">
+                <div class="difference__block">
+                  <h3 class="difference__block-title">Divorcio disputado</h3>
+                  <p class="difference__block-subtitle">Los precios promedio comienzan a partir de $2000 dólares</p>
+                  <p class="difference__block-text">
+                    Proceso fuera de línea e inconveniente 
+                    con representación de abogado para cada 
+                    cónyuge. Costos de honorarios de 
+                    abogados que resultan en gastos 
+                    impredecibles. En general, un 
+                    camino largo y costoso a seguir.
+                  </p>
+                  <ul class="difference__list">
+                    <li class="difference__list-part">La disponibilidad del abogado afecta el tiempo de finalización</li>
+                    <li class="difference__list-part">Cada cónyuge tiene que contratar a un abogado, que duplica automáticamente los honorarios legales</li>
+                    <li class="difference__list-part">Posibles batallas judiciales que se suman a los altos niveles de estrés</li>
+                  </ul>
+                </div>
+                <div class="difference__block">
+                  <h3 class="difference__block-title">Otros servicios de divorcio en línea</h3>
+                  <p class="difference__block-subtitle">Los precios promedio comienzan a partir de $300 dólares</p>
+                  <p class="difference__block-text">
+                    Otros sitios web para completar los documentos 
+                    de divorcio utilizan tecnologías de 
+                    software defectuosas para completar su 
+                    documentación de divorcio.
+                  </p>
+                  <ul class="difference__list">
+                    <li class="difference__list-part">Preparación automatizada de documentos</li>
+                    <li class="difference__list-part">El tiempo de procesamiento varía, pero puede demorar más de tres días hábiles</li>
+                    <li class="difference__list-part">Atención al cliente a pedido, la calidad varía</li>
+                    <li class="difference__list-part">Una tarifa fija reclamada, sin embargo, muchos sitios tienen tarifas ocultas</li>
+                    <li class="difference__list-part">Sin experiencia: muchos sitios comenzaron a funcionar hace solo unos años</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="difference__container col-12 col-md-6">
+                <div class="difference__block difference__block--orange">
+                  <a class="difference__logo" href=""><img class="difference__logo-item" src="./img/logo-transparent.png" alt=""></a>
+                  <h3 class="difference__block-title difference__block-title--white">La principal herramienta de divorcio disputado</h3>
+                  <p class="difference__block-text">
+                    Proceso totalmente guiado, rápido y económico. Servicio de divorcio
+                     en línea experimentado y confiable 
+                     que utiliza tecnología de primer nivel
+                  </p>
+                  <ul class="difference__list">
+                    <li class="difference__list-part difference__list-part--circle">Los documentos de divorcio 
+                      listos para presentar pueden completarse a su propio ritmo con fácil acceso para ambos cónyuges</li>
+                    <li class="difference__list-part difference__list-part--circle">Atención al cliente galardonado 
+                      Una tarifa fija (para ambos cónyuges) para acceder a todos los documentos completados para la presentación</lu>
+                    <li class="difference__list-part difference__list-part--circle">Revisiones gratuitas y 
+                      cambio de nombre gratuito, sin tarifas ocultas</li>
+                    <li class="difference__list-part difference__list-part--circle">Instrucciones detalladas de presentación específicas del estado</li>
+                    <li class="difference__list-part difference__list-part--circle">Revise todo y realice cambios desde la comodidad de su hogar</li>
+                  </ul>
+                  <button class="btn btn--form btn--diff">Start now for just 139$</button>
+                </div>
+                <div class="difference__icons">
+                  <img class="difference__icons-item" src="./img/difference-icon-1.svg" alt="">
+                  <img class="difference__icons-item" src="./img/difference-icon-2.svg" alt="">
+                  <img class="difference__icons-item" src="./img/difference-icon-3.svg" alt="">
+                  <img class="difference__icons-item" src="./img/difference-icon-4.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clients row">
+            <h2 class="clients-title">Compromiso con los clientes</h2>
+            <p class="clients-subtitle">Nuestras herramientas han ayudado
+               a más de 500,000 personas a divorciarse rápidamente y 
+               sin estrés mientras ahorran dinero en el proceso.
+            </p>
+            <div class="row">
+              <div class="clients__block col-12 col-sm-6 col-lg-4">
+                <div class="clients__img clients__img--grey">
+                  <img class="clients__img-item" src="./img/clients-img-1.svg" alt="">
+                </div>
+                <div class="clients__content">
+                  <p class="clients__content-title">Aprobación judicial garantizada</p>
+                  <p class="clients__content-text">Si los formularios no son 
+                    aprobados por el tribunal, reembolsaremos el dinero del cliente</p>
+                </div>
+              </div>
+              <div class="clients__block col-12 col-sm-6 col-lg-4">
+                <div class="clients__img">
+                  <img class="clients__img-item" src="./img/clients-img-2.svg" alt="">
+                </div>
+                <div class="clients__content">
+                  <p class="clients__content-title">Ofrecemos el mejor precio 
+                    (sin cargos ocultos) en Internet</p>
+                  <p class="clients__content-text">Nuestras herramientas han ayudado a completar más de 500,000 casos</p>
+                </div>
+              </div>
+              <div class="clients__block col-12 col-sm-6 col-lg-4">
+                <div class="clients__img clients__img--yellow">
+                  <img class="clients__img-item" src="./img/clients-img-3.svg" alt="">
+                </div>
+                <div class="clients__content">
+                  <p class="clients__content-title">Rellenado de instruccionespaso a paso</p>
+                  <p class="clients__content-text">Nuestras instrucciones de presentación 
+                    fáciles de seguir guían al cliente a través del proceso</p>
+                </div>
+              </div>
+              <div class="clients__block col-12 col-sm-6 col-lg-4">
+                <div class="clients__img">
+                  <img class="clients__img-item" src="./img/clients-img-4.svg" alt="">
+                </div>
+                <div class="clients__content">
+                  <p class="clients__content-title">Ahorre dinero</p>
+                  <p class="clients__content-text">Los clientes ahorran al menos 
+                    $1,700 dólares en honorarios de abogados</p>
+                </div>
+              </div>
+              <div class="clients__block col-12 col-sm-6 col-lg-4">
+                <div class="clients__img clients__img--orange">
+                  <img class="clients__img-item" src="./img/clients-img-5.svg" alt="">
+                </div>
+                <div class="clients__content">
+                  <p class="clients__content-title">Atención al cliente en línea</p>
+                  <p class="clients__content-text">Nuestro dedicado equipo 
+                    de atención al cliente brinda instrucciones durante todo el proceso</p>
+                </div>
+              </div>
+              <div class="clients__block col-12 col-sm-6 col-lg-4">
+                <div class="clients__img">
+                  <img class="clients__img-item" src="./img/clients-img-6.svg" alt="">
+                </div>
+                <div class="clients__content">
+                  <p class="clients__content-title">Disponible en cualquier dispositivo</p>
+                  <p class="clients__content-text">Manejar los documentos de divorcio 
+                    en línea nunca ha sido más conveniente</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews row">
+            <h2 class="reviews-title col-12">Opiniones de OnlineDivorce</h2>
+            <div class="swiper slider">
+              <div class="swiper-wrapper slider-wrapper">
+                <div class="swiper-slide slider-slide">
+                  <div class="slider__block">
+                    <img class="slider__block-img" src="./img/slider-img.jpg" alt="">
+                    <div class="slider__info">
+                      <p class="slider__info-name">Kilpatrick B., Ontario</p>
+                      <div class="slider__info-rate">
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="slider-text">OD proporciona una guía clara, 
+                    incluso para mi inusual y bastante especifico caso, 
+                    resultó ser muy útil. Pensarías que no puedes 
+                    esperar recibir soporte online profesional. 
+                    Pero OD sorprende. Todos los formularios 
+                    estuvieron preparados a tiempo. ¡Lo recomiendo!</p>
+                  <div class="slider__data">
+                    <p class="slider__data-date">Aug 2018</p>
+                    <p class="slider__data-verified">Verified Buyer</p>
+                  </div>
+                </div>
+                <div class="swiper-slide slider-slide">
+                  <div class="slider__block">
+                    <img class="slider__block-img" src="./img/slider-img.jpg" alt="">
+                    <div class="slider__info">
+                      <p class="slider__info-name">Kilpatrick B., Ontario</p>
+                      <div class="slider__info-rate">
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="slider-text">OD proporciona una guía clara, 
+                    incluso para mi inusual y bastante especifico caso, 
+                    resultó ser muy útil. Pensarías que no puedes 
+                    esperar recibir soporte online profesional. 
+                    Pero OD sorprende. Todos los formularios 
+                    estuvieron preparados a tiempo. ¡Lo recomiendo!</p>
+                  <div class="slider__data">
+                    <p class="slider__data-date">Aug 2018</p>
+                    <p class="slider__data-verified">Verified Buyer</p>
+                  </div>
+                </div>
+                <div class="swiper-slide slider-slide">
+                  <div class="slider__block">
+                    <img class="slider__block-img" src="./img/slider-img.jpg" alt="">
+                    <div class="slider__info">
+                      <p class="slider__info-name">Kilpatrick B., Ontario</p>
+                      <div class="slider__info-rate">
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="slider-text">OD proporciona una guía clara, 
+                    incluso para mi inusual y bastante especifico caso, 
+                    resultó ser muy útil. Pensarías que no puedes 
+                    esperar recibir soporte online profesional. 
+                    Pero OD sorprende. Todos los formularios 
+                    estuvieron preparados a tiempo. ¡Lo recomiendo!</p>
+                  <div class="slider__data">
+                    <p class="slider__data-date">Aug 2018</p>
+                    <p class="slider__data-verified">Verified Buyer</p>
+                  </div>
+                </div>
+                <div class="swiper-slide slider-slide">
+                  <div class="slider__block">
+                    <img class="slider__block-img" src="./img/slider-img.jpg" alt="">
+                    <div class="slider__info">
+                      <p class="slider__info-name">Kilpatrick B., Ontario</p>
+                      <div class="slider__info-rate">
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="slider-text">OD proporciona una guía clara, 
+                    incluso para mi inusual y bastante especifico caso, 
+                    resultó ser muy útil. Pensarías que no puedes 
+                    esperar recibir soporte online profesional. 
+                    Pero OD sorprende. Todos los formularios 
+                    estuvieron preparados a tiempo. ¡Lo recomiendo!</p>
+                  <div class="slider__data">
+                    <p class="slider__data-date">Aug 2018</p>
+                    <p class="slider__data-verified">Verified Buyer</p>
+                  </div>
+                </div>
+                <div class="swiper-slide slider-slide">
+                  <div class="slider__block">
+                    <img class="slider__block-img" src="./img/slider-img.jpg" alt="">
+                    <div class="slider__info">
+                      <p class="slider__info-name">Kilpatrick B., Ontario</p>
+                      <div class="slider__info-rate">
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="slider-text">OD proporciona una guía clara, 
+                    incluso para mi inusual y bastante especifico caso, 
+                    resultó ser muy útil. Pensarías que no puedes 
+                    esperar recibir soporte online profesional. 
+                    Pero OD sorprende. Todos los formularios 
+                    estuvieron preparados a tiempo. ¡Lo recomiendo!</p>
+                  <div class="slider__data">
+                    <p class="slider__data-date">Aug 2018</p>
+                    <p class="slider__data-verified">Verified Buyer</p>
+                  </div>
+                </div>
+                <div class="swiper-slide slider-slide">
+                  <div class="slider__block">
+                    <img class="slider__block-img" src="./img/slider-img.jpg" alt="">
+                    <div class="slider__info">
+                      <p class="slider__info-name">Kilpatrick B., Ontario</p>
+                      <div class="slider__info-rate">
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                        <svg class="slider-star">
+                          <use xlink:href ="#star"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="slider-text">OD proporciona una guía clara, 
+                    incluso para mi inusual y bastante especifico caso, 
+                    resultó ser muy útil. Pensarías que no puedes 
+                    esperar recibir soporte online profesional. 
+                    Pero OD sorprende. Todos los formularios 
+                    estuvieron preparados a tiempo. ¡Lo recomiendo!</p>
+                  <div class="slider__data">
+                    <p class="slider__data-date">Aug 2018</p>
+                    <p class="slider__data-verified">Verified Buyer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination slider-pagination"></div>
+
+              <div class="swiper-button-prev slider-button-prev"></div>
+              <div class="swiper-button-next slider-button-next"></div>
+            </div>
+            <a class="reviews-link col-12" href="#">Ver todas las opiniones de los clientes</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer__container header__container col-12">
+            <a class="footer__logo" href=""><img class="footer__logo-item" src="./img/logo-transparent.png" alt=""></a>
+            <nav class="footer_nav nav nav--footer">
+                <ul class="nav__list">
+                  <li class="nav__link"><a class="nav__link-item nav__link-item--footer" href="#">Cómo funciona</a></li>
+                  <li class="nav__link"><a class="nav__link-item nav__link-item--footer" href="#">¿Por Qué Nosotros?</a></li>
+                  <li class="nav__link"><a class="nav__link-item nav__link-item--footer" href="#">Comentarios</a></li>
+                  <li class="nav__link"><a class="nav__link-item nav__link-item--footer" href="#">FAQ</a></li>
+                  <li class="nav__link"><a class="nav__link-item nav__link-item--footer" href="#">Contáctenos</a></li>
+                  <li class="nav__link"><button class="btn btn--pc" href="#">Empezar</button></li>
+                  <li class="nav__link"><a class="nav__link-item nav__link-item--footer" href="#">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+          </div>
+          <div class="footer__block col-12 col-md-5">
+            <p class="footer-text"><span class="footer-text--bold">Document Processing Center Address:</span> Online Divorce Technology LLC
+              416 W San Ysidro BLVD, 
+              Ste L PMB #630, San Ysidro CA 92173</p>
+          </div>
+          <div class="footer__block col-12 col-md-6">
+            <p class="footer-text--bold">1 (866) 927-1400</p>
+            <p class="footer-text">Mon-Fri, 9:00AM - 8:00PM EST</p>
+          </div>
+          <div class="footer__block footer__block--border col-12">
+            <div class="footer__divorce row">
+             <div class="footer__divorce-col col-6">
+              <div class="footer__divorce-block  ">
+                <p class="footer-text">Divorce in Alabama</p>
+                <p class="footer-text">Divorce in Alaska</p>
+                <p class="footer-text">Divorce in Arizona</p>
+                <p class="footer-text">Divorce in Arkansas</p>
+                <p class="footer-text">Divorce in California</p>
+                <p class="footer-text">Divorce in Colorado</p>
+                <p class="footer-text">Divorce in Connecticut</p>
+                <p class="footer-text">Divorce in Delaware</p>
+              </div>
+              <div class="footer__divorce-block  ">
+                <p class="footer-text">Divorce in Florida</p>
+                <p class="footer-text">Divorce in Georgia</p>
+                <p class="footer-text">Divorce in Hawaii</p>
+                <p class="footer-text">Divorce in Idaho</p>
+                <p class="footer-text">Divorce in Illinois</p>
+                <p class="footer-text">Divorce in Indiana</p>
+                <p class="footer-text">Divorce in Iowa</p>
+                <p class="footer-text">Divorce in Kansas</p>
+              </div>
+              <div class="footer__divorce-block  ">
+                <p class="footer-text">Divorce in Kentucky</p>
+                <p class="footer-text">Divorce in Louisiana</p>
+                <p class="footer-text">Divorce in Maine</p>
+                <p class="footer-text">Divorce in Maryland</p>
+                <p class="footer-text">Divorce in Massachusetts</p>
+                <p class="footer-text">Divorce in Michigan</p>
+                <p class="footer-text">Divorce in Minnesota</p>
+                <p class="footer-text">Divorce in Mississippi</p>
+              </div>
+              <div class="footer__divorce-block  footer__divorce-block--hidden">
+                <p class="footer-text">Divorce in Rhode Island</p>
+                <p class="footer-text">Divorce in South Carolina</p>
+                <p class="footer-text">Divorce in South Dakota</p>
+                <p class="footer-text">Divorce in Tennessee</p>
+                <p class="footer-text">Divorce in Texas</p>
+                <p class="footer-text">Divorce in Utah</p>
+                <p class="footer-text">Divorce in Vermont</p>
+                <p class="footer-text">Divorce in Virginia</p>
+              </div>
+             </div>
+            <div class="footer__divorce-col col-6">
+              <div class="footer__divorce-block  ">
+                <p class="footer-text">Divorce in Missouri</p>
+                <p class="footer-text">Divorce in Canada</p>
+                <p class="footer-text">Divorce in Ontario</p>
+                <p class="footer-text">Divorce in Quebec</p>
+                <p class="footer-text">Divorce in Nova Scotia</p>
+                <p class="footer-text">Divorce in New Brunswick</p>
+                <p class="footer-text">Divorce in Manitoba</p>
+                <p class="footer-text">Divorce in British Columbia</p>
+              </div>
+              <div class="footer__divorce-block  ">
+                <p class="footer-text">Divorce in Prince Edward</p>
+                <p class="footer-text">Divorce in Saskatchewan</p>
+                <p class="footer-text">Divorce in Montana</p>
+                <p class="footer-text">Divorce in Nebraska</p>
+                <p class="footer-text">Divorce in Nevada</p>
+                <p class="footer-text">Divorce in New Hampshire</p>
+                <p class="footer-text">Divorce in New Jersey</p>
+                <p class="footer-text">Divorce in New Mexico</p>
+              </div>
+              <div class="footer__divorce-block  ">
+                <p class="footer-text">Divorce in New York</p>
+                <p class="footer-text">Divorce in North Carolina</p>
+                <p class="footer-text">Divorce in North Dakota</p>
+                <p class="footer-text">Divorce in Ohio</p>
+                <p class="footer-text">Divorce in Oklahoma</p>
+                <p class="footer-text">Divorce in Oregon</p>
+                <p class="footer-text">Divorce in Pennsylvania</p>
+                <p class="footer-text">Divorce in Puerto Rico</p>
+              </div>
+              <div class="footer__divorce-block  footer__divorce-block--hidden">
+                <p class="footer-text">Divorce in Washington D.C.</p>
+                <p class="footer-text">Divorce in West Virginia</p>
+                <p class="footer-text">Divorce in Wisconsin</p>
+                <p class="footer-text">Divorce in Wyoming</p>
+                <p class="footer-text">Divorce in Alberta</p>
+                <p class="footer-text">Divorce in Newfoundland </p>
+                <p class="footer-text">Divorce in Northwest Territories</p>
+                <p class="footer-text">Divorce in Yukon</p>
+                <p class="footer-text">Divorce in Nunavut</p>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="row">
+            <p class="footer-text footer-text--margin col-12">Mapa del sitio</p>
+            <p class="footer-text footer-text--margin col-12">© 2000-2019 Online Divorcio, Todos los derechos reservados</p>
+            <p class="footer-text footer-text--margin footer-text--padding col-12">Aviso legal: Divorcio en línea no es un bufete
+               de abogados y su sservicios de la página web y los 
+               formularios no sustituyen el asesoramiento de un abogado. 
+               Divorcio en línea proporciona acceso a servicios de autoayuda 
+               asistidos por computadora en su dirección específica. La página 
+               web del Divorcio en línea y las instrucciones escritas brindan 
+               información general sobre el proceso de divorcio solamente; No 
+               podemos darle ningún consejo específico, opiniones o recomendaciones 
+               sobre su selección o relleno de formularios o sus derechos, recursos u 
+               opciones legales particulares. OnlineDivorce.com es un sitio web que 
+               proporciona acceso a cuestionarios en línea autoguiados. El Divorcio en 
+               línea no vende formularios en blanco, y un usuario puede descargarlos en el 
+               sitio web de un tribunal. Las comunicaciones entre Usted y Divorcio en línea 
+               se rigen por nuestra Política de privacidad, pero no están cubiertas por los 
+               privilegios de abogado-cliente o producto de trabajo. Su acceso al sitio web 
+               de Divorcio en línea está sujeto y regido por nuestros Términos de uso. 
+               Cualquier compra de Divorcio en línea está sujeta y regida por nuestros Términos y condiciones.</p>
+          </div>
+        </div>
+       </div>
+    </footer>
+    
+    <svg display ="none">
+      <symbol id="arrows" viewBox="0 0 612.02 612.02">
+        <g>
+          <path d="M596.96,269.674L342.381,15.094c-20.079-20.079-52.644-20.079-72.723,0c-20.079,20.079-20.079,52.644,0,72.723
+            L487.852,306.01L269.658,524.202c-20.079,20.079-20.079,52.644,0,72.723s52.644,20.079,72.723,0L596.96,342.346
+            C617.039,322.317,617.039,289.753,596.96,269.674z M290.858,254.258L88.744,41.238c-20.309-21.378-53.204-21.378-73.513,0
+            s-20.309,56.058,0,77.462l165.371,174.289L15.231,467.278c-20.309,21.379-20.309,56.083,0,77.462s53.204,21.379,73.513,0
+            L290.858,331.72C311.167,310.342,311.167,275.662,290.858,254.258z"/>
+        </g>
+      </symbol>
+      <symbol id="star" viewBox="0 0 49.94 49.94">
+        <g>
+          <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
+            c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
+            L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
+            c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
+            c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
+            l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
+            l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z"/>
+          </g>
+      </symbol>
+    </svg>
+      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+      <script src="./js/main.min.js"></script>
+</body>
+</html>

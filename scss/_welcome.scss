@@ -1,0 +1,49 @@
+.welcome {
+ margin-top: 80px;
+ position: relative;
+
+ @media(min-width:992px) {   
+    margin-bottom: 100px;
+ }
+
+ &__row {
+     background-image: url(../img/welcome-bg-mob.png);
+     background-repeat: no-repeat;
+     background-position: right -15px top -63px;
+     justify-content: center;
+
+     @media(min-width:576px) {   
+        background-image: url(../img/welcome-bg-pc.png);
+        background-size: 100%;
+        background-position: right 0 top 0;
+     }
+ }
+ &__title {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 25px 0;
+ }
+
+ &__list {
+
+    @media(min-width: 576px) {
+        margin: 25px 0 50px 0;
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        padding: 15px 0 15px 50px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            background-image: url(../img/flag.svg);
+            background-repeat: no-repeat;
+            height: 20px;
+            width: 20px;
+        }
+    }
+ }
+}

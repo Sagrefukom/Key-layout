@@ -1,0 +1,122 @@
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &-title {
+        color: $orange-color;
+        margin: 40px 0;
+
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 20px;
+
+        @media(min-width: 576px) {
+            flex-direction: row;
+            margin-bottom: 50px;
+        }
+        @media(min-width: 992px) {
+            flex-direction: row;
+            margin-bottom: initial;
+        }
+        &-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100px;
+            position: relative;
+
+            @media(min-width: 992px) {
+                min-height: 125px;
+            }
+    
+            &::before {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                top: 50%;
+                left: 50%;
+                transform: translate(-70%, -100%);
+                width: 60px;
+                height: 60px;
+                background-color: #DBDBDB;
+                border-radius: 50%;
+                opacity: .3;
+            }
+
+            &--grey {
+                &::before {
+                    background-color: $grey-bg;
+                }
+            }
+            &--yellow {
+                &::before {
+                    background-color: $yellow-color;
+                }
+            }
+            &--orange {
+                &::before {
+                    background-color: $orange-color;
+                }
+            }
+        }
+        &-img {    
+            width: 50px;
+            height: 50px;
+
+            @media(min-width: 992px) {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        &-desc {
+            @include adaptive-font(17,14);
+            line-height: 20px;
+            font-weight: 700;
+            color: $grey-bg;
+            max-width: 185px;
+            text-align: center;
+
+            &--grey {
+                color: $grey-text-color;
+            }
+            &--yellow {
+                color: $yellow-color;
+            }
+            &--orange {
+                color: $orange-color;
+            }
+
+            @media(min-width: 1180px) {
+                font-size: 17px;
+                line-height: 25px;
+            }
+        }
+    }
+    &-svg {
+        width: 14px;
+        height: 12px;
+        transform: rotate(90deg);
+        margin: 15px 0;
+
+        @media(min-width: 576px) {
+            transform: rotate(0);
+        }
+
+        &--grey {
+            fill: $grey-bg;
+        }
+        &--yellow {
+            fill: $yellow-color;
+        }
+        &--orange {
+            fill: $orange-color;
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.survey {
+    max-width: 1050px;
+    background: linear-gradient(333.24deg, #FAD961 -52.95%, #FF6E00 93.1%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin: auto;
+    padding: 20px 15px;
+    position: relative;
+    margin-top: 50px;
+
+    @media(min-width: 576px) {
+        margin-top: initial;
+    }
+
+    @media(min-width: 768px) {
+        padding: 40px;
+    }
+    @media(min-width: 992px) {
+        margin-bottom: 40px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__title {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 700;
+        padding: 20px 0;
+
+        @media(min-width: 715px) {
+            position: absolute;
+            top: -35px;
+            left: 0;
+            width: 215px;
+            height: 60px;
+            background-color: $orange-color;
+            border-radius: 10px 5px 5px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 150px;
+    }
+    &__radio {
+        
+        &-title {
+            @include adaptive-font(18, 14);
+            letter-spacing: 0.7px;
+            line-height: 20px;
+
+            @media(min-width: 1180px) {
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+        &-block {
+            display: flex;
+            justify-content: flex-start;
+            padding: 15px 0;
+            
+        }
+        &-label {
+            margin-right: 50px;
+        }
+        &-item {
+            font-size: 16px;
+            line-height: 25px;
+            position: relative;
+            padding-left: 30px;
+            display: inline-block;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 22px;
+                height: 22px;
+                border: 1px solid $red-color;
+                border-radius: 50%;
+                background-color: #ffffff;
+                top: 0;
+                left: 0;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                width: 12px;
+                height: 12px;
+                background-color: $red-color;
+                opacity: 0;
+                transition: .3s;
+                border-radius: 50%;
+            }
+        }
+    }
+    
+    &__input {
+        appearance: none;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.survey__input:checked + .survey__radio-item::after {
+    opacity: 1;
+}
