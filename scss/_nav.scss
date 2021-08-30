@@ -6,7 +6,7 @@
     justify-content: center;
     margin-top: 80px;
     padding: 15px;
-    background-color: #ffffff;
+    background: #E5E5E5;
     transform: translateX(100%);
     width: 100%;
     min-height: 100%;
@@ -66,12 +66,36 @@
             padding: 10px 0;
             transition: all .3s;
 
+            &::after {
+                content: "";
+                display: block;
+                width: 0;
+                border-bottom: 1px solid $grey-text-color;
+                position: absolute;
+                bottom: -0;
+                left: 50%;
+                transition: .3s;
+            }
+            &:hover::after {
+                content: "";
+                display: block;
+                width: 100%;
+                border-bottom: 1px solid $grey-text-color;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
             &--footer {
                 color: #ffffff;
+
+                &::after, &:hover::after {
+                    border-bottom: 1px solid #ffffff;
+                }
             }
 
             &:active, &:focus, &:hover {
-                color: $red-color;
+                font-weight: 700;
             }
 
             @media(min-width:992px) {

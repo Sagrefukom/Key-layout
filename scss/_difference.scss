@@ -12,6 +12,10 @@
             border-radius: 5px;
             color: #FFFFFF;
             padding: 25px 18px;
+
+            @media(min-width: 768px) {
+                border-radius: 18px;
+            }
         }
 
         &-title {
@@ -36,7 +40,7 @@
 
         &-part {
             position: relative;
-            padding: 15px 0 15px 25px;
+            padding: 5px 0 5px 25px;
             &::before {
                 content: '';
                 position: absolute;
@@ -75,7 +79,11 @@
 
         &-item {
             width: 80px;
-            height: 40px;
+            height: 25px;
+
+            @media(min-width: 768px) {
+                height: 40px;
+            }
         }
     }
 }
